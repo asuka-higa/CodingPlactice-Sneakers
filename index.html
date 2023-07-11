@@ -8,19 +8,20 @@
   <meta name="description" content="スニーカー専門のニュースメディア">
   <link rel="stylesheet" href="css/destyle.css-master/destyle.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="shortcut icon" href="img/favicon.ico">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 
 <body>
   <header class="header">
-    <div class="header-inner">
-      <h1 class="site-title">Sneakers</h1>
-      <div class="hamb-btn">
-        <span class="hamb-btn-bar top-bar"></span>
-        <span class="hamb-btn-bar middle-bar"></span>
-        <span class="hamb-btn-bar bottom-bar"></span>
-      </div><!-- /.hamb-btn -->
-    </div><!-- /.header-inner -->
+    <h1 class="site-title">Sneakers</h1>
+    <div class="hamb-btn">
+      <span class="hamb-btn-bar top-bar"></span>
+      <span class="hamb-btn-bar middle-bar"></span>
+      <span class="hamb-btn-bar bottom-bar"></span>
+    </div><!-- /.hamb-btn -->
 
     <div class="hamb-overlay">
 
@@ -32,13 +33,13 @@
             <li class="hamb-menu-li"><a href="#feature">FEATURE</a></li>
             <li class="hamb-menu-li"><a href="#contact">CONTACT</a></li>
           </ul>
-        </nav>
 
-        <ul class="hamb-sns-ul">
-          <li class="hamb-sns-li"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F">Twitter</a></li>
-          <li class="hamb-sns-li"><a href="https://www.facebook.com/">facebook</a></li>
-          <li class="hamb-sns-li"><a href="https://www.instagram.com/">instagram</a></li>
-        </ul>
+          <ul class="hamb-sns-ul">
+            <li class="hamb-sns-li"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F">Twitter</a></li>
+            <li class="hamb-sns-li"><a href="https://www.facebook.com/">facebook</a></li>
+            <li class="hamb-sns-li"><a href="https://www.instagram.com/">instagram</a></li>
+          </ul>
+        </nav>
 
       </div><!-- /.hamb-menu -->
     </div><!-- /.hamb-overlay -->
@@ -47,6 +48,138 @@
 
   <main class="main">
     <video src="img/video.mp4" class="video" autoplay muted loop></video>
+
+    <section class="pickup" id="pickup">
+      <h2 class="section-title">PICK UP</h2>
+      <ul class="pickup-items">
+        <li><img src="img/pickup1.jpg" alt="pickupアイテムの画像1" class="pickup-item-img"></li>
+        <li><img src="img/pickup2.jpg" alt="pickupアイテムの画像2" class="pickup-item-img"></li>
+        <li><img src="img/pickup3.jpg" alt="pickupアイテムの画像3" class="pickup-item-img"></li>
+        <li><img src="img/pickup4.jpg" alt="pickupアイテムの画像4" class="pickup-item-img"></li>
+        <li><img src="img/pickup5.jpg" alt="pickupアイテムの画像5" class="pickup-item-img"></li>
+        <li><img src="img/pickup6.jpg" alt="pickupアイテムの画像6" class="pickup-item-img"></li>
+        <li><img src="img/pickup7.jpg" alt="pickupアイテムの画像7" class="pickup-item-img"></li>
+        <li><img src="img/pickup8.jpg" alt="pickupアイテムの画像8" class="pickup-item-img"></li>
+        <li><img src="img/pickup9.jpg" alt="pickupアイテムの画像9" class="pickup-item-img"></li>
+      </ul>
+    </section><!-- /.pickup -->
+
+    <section class="feature" id="feature">
+      <h2 class="section-title">FEATURE</h2>
+      <div class="feature-container wrapper">
+        <div class="feature-card">
+          <img src="img/feature1.jpg" alt="featureの画像1" class="feature-img">
+          <div class="feature-info">
+            <p class="feature-category">category</p>
+            <h3 class="feature-title">テキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+            <time class="feature-time">XXXX.XX.XX</time>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="img/feature2.jpg" alt="featureの画像2" class="feature-img">
+          <div class="feature-info">
+            <p class="feature-category">category</p>
+            <h3 class="feature-title">テキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+            <time class="feature-time">XXXX.XX.XX</time>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="img/feature3.jpg" alt="featureの画像3" class="feature-img">
+          <div class="feature-info">
+            <p class="feature-category">category</p>
+            <h3 class="feature-title">テキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+            <time class="feature-time">XXXX.XX.XX</time>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="img/feature4.jpg" alt="featureの画像4" class="feature-img">
+          <div class="feature-info">
+            <p class="feature-category">category</p>
+            <h3 class="feature-title">テキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+            <time class="feature-time">XXXX.XX.XX</time>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="img/feature5.jpg" alt="featureの画像5" class="feature-img">
+          <div class="feature-info">
+            <p class="feature-category">category</p>
+            <h3 class="feature-title">テキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+            <time class="feature-time">XXXX.XX.XX</time>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="img/feature6.jpg" alt="featureの画像6" class="feature-img">
+          <div class="feature-info">
+            <p class="feature-category">category</p>
+            <h3 class="feature-title">テキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+            <time class="feature-time">XXXX.XX.XX</time>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="img/feature7.jpg" alt="featureの画像7" class="feature-img">
+          <div class="feature-info">
+            <p class="feature-category">category</p>
+            <h3 class="feature-title">テキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+            <time class="feature-time">XXXX.XX.XX</time>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="img/feature8.jpg" alt="featureの画像8" class="feature-img">
+          <div class="feature-info">
+            <p class="feature-category">category</p>
+            <h3 class="feature-title">テキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+            <time class="feature-time">XXXX.XX.XX</time>
+          </div>
+        </div>
+
+        <div class="feature-card">
+          <img src="img/feature9.jpg" alt="featureの画像9" class="feature-img">
+          <div class="feature-info">
+            <p class="feature-category">category</p>
+            <h3 class="feature-title">テキストテキストテキストテキストテキストテキストテキストテキスト</h3>
+            <time class="feature-time">XXXX.XX.XX</time>
+          </div>
+        </div>
+
+      </div><!-- /.feature-container -->
+    </section><!-- /.festure -->
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">CONTACT</h2>
+      <div class="contact-container wrapper">
+        <div class="contact-info">
+          <p class="contact-text">テキストテキストテキスト</p>
+          <p class="contact-text">
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+          <p class="contact-text">
+            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+          </p>
+        </div>
+        <div class="contact-form">
+          <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="mail">Mail:</label>
+            <input type="text" name="mail" id="mail">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message"></textarea>
+            <input type="submit" value="SEND">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>&copy; Sneakers</small>
+    </footer>
   </main>
 
   <script src="js/main.js"></script>

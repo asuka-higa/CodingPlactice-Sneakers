@@ -22,29 +22,30 @@ a {
 -----------------------*/
 
 .header {
+  width: 100%;
+  height: 80px;
+  background: #fff;
+  position: fixed;
+  top: 0;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
 
-  .header-inner {
-    width: 100%;
-    height: 80px;
-    background: #fff;
-    position: fixed;
-    top: 0;
-    padding: 0 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-
-    @media screen and (max-width:600px) {
-      padding: 0 16px;
-    }
+  @media screen and (max-width:600px) {
+    padding: 0 16px;
   }
+
 
   .site-title {
     font-size: 4.0rem;
   }
 
   .hamb-btn {
+    position: absolute;
+    right: 40px;
     cursor: pointer;
     width: 30px;
     height: 30px;
@@ -52,6 +53,11 @@ a {
     flex-direction: column;
     justify-content: space-between;
     padding: 5px 0;
+
+
+    @media screen and (max-width:600px) {
+      right: 16px;
+    }
   }
 
   .hamb-btn-bar {
@@ -64,7 +70,7 @@ a {
     z-index: 999;
 
     &.active {
-      background: red;
+      background: #fff;
     }
 
   }
@@ -99,7 +105,6 @@ a {
       width: 100%;
       height: 100vh;
       background: #000000a2;
-      z-index: 0;
     }
   }
 
@@ -148,6 +153,206 @@ a {
   margin-top: 80px;
 }
 
+.section-title {
+  font-size: 3.6rem;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 48px;
+
+  @media screen and (max-width:600px) {
+    font-size: 2.4rem;
+    margin-bottom: 32px;
+  }
+}
+
 .video {
   width: 100%;
+  margin-bottom: 120px;
+
+  @media screen and (max-width:600px) {
+    height: 100vh;
+    object-fit: cover;
+    margin-bottom: 96px;
+  }
+}
+
+/*----------------------
+        .pickup
+-----------------------*/
+.pickup {
+  width: 100%;
+  margin-bottom: 120px;
+
+  .pickup-items {
+    width: 100%;
+  }
+
+  li {
+    margin-inline: 30px;
+  }
+
+  .pickup-item-img {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0 aut0;
+  }
+}
+
+/*----------------------
+        .feature
+-----------------------*/
+.feature {
+
+  .feature-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 30px;
+    margin-bottom: 60px;
+
+    @media screen and (max-width:983px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media screen and (max-width:657px) {
+      grid-template-columns: 1fr;
+    }
+
+    .feature-card {
+      box-shadow: 0 0 12px #888888;
+    }
+
+    .feature-img {
+      opacity: 0;
+      transform: translateY(10px);
+      display: block;
+      max-width: 100%;
+      margin-bottom: 36px;
+      transition: all 1s;
+
+      &.on {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .feature-info {
+      width: 100%;
+      padding: 0 30px 36px;
+      font-size: 1.2rem;
+    }
+
+    .feature-category {
+      margin-bottom: 30px;
+    }
+
+    on .feature-title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .feature-time {
+      text-align: right;
+      display: block;
+      width: 100%;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+/*----------------------
+        .contact
+-----------------------*/
+
+.contact {
+  background: #121212;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 24px;
+  padding: 60px 0 0;
+
+  @media screen and (max-width:600px) {
+    padding: 60px 0 80px;
+  }
+
+
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width:600px) {
+      display: block;
+    }
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 45%;
+
+    @media screen and (max-width:600px) {
+      width: 100%;
+    }
+  }
+
+  .contact-text {
+    margin-bottom: 40px;
+
+    @media screen and (max-width:600px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  input[type=text],
+  textarea {
+    display: block;
+    background: #fff;
+    width: 100%;
+    color: #121212;
+  }
+
+  input[type=text] {
+    height: 40px;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  textarea {
+    height: 70px;
+    margin-bottom: 24px;
+    padding: 8px;
+  }
+
+
+  input[type=submit] {
+    display: block;
+    border: .5px solid #fff;
+    width: 200px;
+    margin-bottom: 24px;
+    padding: 12px 0;
+    text-align: center;
+
+    @media screen and (max-width:600px) {
+      width: 100%;
+      margin: 0;
+    }
+
+    &:hover {
+      color: #121212;
+      background: #fff;
+    }
+  }
+
+}
+
+/*----------------------
+        footer
+-----------------------*/
+
+.footer {
+  background: #121212;
+  color: #fff;
+  text-align: center;
+  padding: 12px 0;
 }
