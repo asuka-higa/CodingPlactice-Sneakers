@@ -33,14 +33,12 @@ a {
   align-items: center;
   z-index: 10;
 
-
-  @media screen and (max-width:600px) {
+  @media screen and (max-width: 600px) {
     padding: 0 16px;
   }
 
-
   .site-title {
-    font-size: 4.0rem;
+    font-size: 4rem;
   }
 
   .hamb-btn {
@@ -54,8 +52,7 @@ a {
     justify-content: space-between;
     padding: 5px 0;
 
-
-    @media screen and (max-width:600px) {
+    @media screen and (max-width: 600px) {
       right: 16px;
     }
   }
@@ -66,13 +63,12 @@ a {
     width: 30px;
     height: 2px;
     background: #000;
-    transition: transform .5s, opacity .5s;
+    transition: transform 0.5s, opacity 0.5s;
     z-index: 999;
 
     &.active {
       background: #fff;
     }
-
   }
 
   .top-bar {
@@ -95,7 +91,7 @@ a {
 
   .hamb-overlay {
     opacity: 0;
-    transition: all .3s;
+    transition: all 0.3s;
 
     &.active {
       opacity: 1;
@@ -115,10 +111,11 @@ a {
     padding: 56px 30px 0;
     font-size: 1.4rem;
     color: #fff;
-    position: fixed;
+    position: absolute;
+    top: 0;
     left: -300px;
     opacity: 0;
-    transition: left .5s, opacity .5s;
+    transition: left 0.5s, opacity 0.5s;
 
     &.active {
       left: 0px;
@@ -160,7 +157,7 @@ a {
   text-align: center;
   margin-bottom: 48px;
 
-  @media screen and (max-width:600px) {
+  @media screen and (max-width: 600px) {
     font-size: 2.4rem;
     margin-bottom: 32px;
   }
@@ -170,7 +167,7 @@ a {
   width: 100%;
   margin-bottom: 120px;
 
-  @media screen and (max-width:600px) {
+  @media screen and (max-width: 600px) {
     height: 100vh;
     object-fit: cover;
     margin-bottom: 96px;
@@ -203,7 +200,6 @@ a {
         .feature
 -----------------------*/
 .feature {
-
   .feature-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -211,11 +207,11 @@ a {
     gap: 30px;
     margin-bottom: 60px;
 
-    @media screen and (max-width:983px) {
+    @media screen and (max-width: 983px) {
       grid-template-columns: repeat(2, 1fr);
     }
 
-    @media screen and (max-width:657px) {
+    @media screen and (max-width: 657px) {
       grid-template-columns: 1fr;
     }
 
@@ -247,7 +243,7 @@ a {
       margin-bottom: 30px;
     }
 
-    on .feature-title {
+    .feature-title {
       font-size: 1.4rem;
       font-weight: 700;
       margin-bottom: 30px;
@@ -273,16 +269,15 @@ a {
   line-height: 24px;
   padding: 60px 0 0;
 
-  @media screen and (max-width:600px) {
+  @media screen and (max-width: 600px) {
     padding: 60px 0 80px;
   }
-
 
   .contact-container {
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width: 600px) {
       display: block;
     }
   }
@@ -291,7 +286,7 @@ a {
   .contact-form {
     width: 45%;
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width: 600px) {
       width: 100%;
     }
   }
@@ -299,12 +294,12 @@ a {
   .contact-text {
     margin-bottom: 40px;
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width: 600px) {
       margin-bottom: 32px;
     }
   }
 
-  input[type=text],
+  input[type="text"],
   textarea {
     display: block;
     background: #fff;
@@ -312,7 +307,7 @@ a {
     color: #121212;
   }
 
-  input[type=text] {
+  input[type="text"] {
     height: 40px;
     margin-bottom: 16px;
     padding: 0 8px;
@@ -324,16 +319,15 @@ a {
     padding: 8px;
   }
 
-
-  input[type=submit] {
+  input[type="submit"] {
     display: block;
-    border: .5px solid #fff;
+    border: 0.5px solid #fff;
     width: 200px;
     margin-bottom: 24px;
     padding: 12px 0;
     text-align: center;
 
-    @media screen and (max-width:600px) {
+    @media screen and (max-width: 600px) {
       width: 100%;
       margin: 0;
     }
@@ -343,7 +337,6 @@ a {
       background: #fff;
     }
   }
-
 }
 
 /*----------------------
